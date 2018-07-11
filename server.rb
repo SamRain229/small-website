@@ -4,9 +4,9 @@ get '/' do
 end
 
 get "/samrain" do
-    File.read(File.join('public' , 'samrain.html'))
+    File.read(File.join('public', 'samrain.html'))
   end
 
 get "images/Headshot.jpg" do
-  File.set("images", "Headshot.jpg")
+  File.set(File.join("images", "Headshot.jpg"))
 end
